@@ -1,0 +1,216 @@
+.modal-webcam {
+    top: 0;
+    left: 0;
+    // width: 100w;
+    // height: 100h;
+    display: 'flex';
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    video {
+        max-width: 100%;
+    }
+
+    .ant-modal-body {
+        padding: 0;
+        height: 292.5px;
+        border-radius: 8px;
+    }
+
+}
+
+
+.title {
+    position: absolute;
+    margin-top: -175px;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    .back-btn {
+        margin-left: -300px;
+
+        .back-button {
+            color: #ffffff;
+            font-size: 16px;
+        }
+    }
+    .add-btn {
+        margin-right: -300px;
+        
+        .add-button {
+            color: #ffffff;
+            font-size: 16px;
+        }
+    }
+}
+  
+  
+
+.camera-capture {
+    position: relative;
+    display: inline-block;
+    // background: rgba(0, 0, 0, 0.80);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.webcam-video {
+    width: auto;
+
+    // height: 100vh;
+    video {
+        width: 100%;
+        object-fit: none;
+        border-radius: 8px;
+    }
+}
+
+.capture-frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    /* Đặt kích thước vùng chụp ở đây */
+    height: 298.5px;
+    flex-shrink: 0;
+    // border: 2px solid #FFA731;
+    border-radius: 8px;
+
+    /* Màu và độ dày của border */
+    .capture-corner {
+        position: absolute;
+
+
+    }
+
+    .top-left {
+        margin-top: -20px;
+        margin-left: -40px;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-top-left-radius: 8px;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        border-color: #FFA731;
+        border-style: solid;
+    }
+
+    .top-right {
+        margin-top: -20px;
+        margin-right: -40px;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        border-top-right-radius: 8px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+        border-color: #FFA731;
+        border-style: solid;
+    }
+
+    .bottom-right {
+        margin-bottom: -20px;
+        margin-right: -40px;
+        bottom: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        border-bottom-right-radius: 8px;
+        border-top-width: 0px;
+        border-left-width: 0px;
+        border-color: #FFA731;
+        border-style: solid;
+    }
+
+    .bottom-left {
+        margin-bottom: -20px;
+        margin-left: -40px;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-bottom-left-radius: 8px;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-color: #FFA731;
+        border-style: solid;
+    }
+}
+
+.take-picture-btn {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    top: 365px;
+    transform: translateX(-50%);
+    background: transparent;
+    border: none;
+
+    svg {
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+    }
+
+    .take-pictrue-txt {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+    }
+}
+
+.preview-image {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 100;
+}
+
+.modal-webcam {
+    padding: 0 !important;
+
+    .ant-modal-body {
+        padding: 0 !important;
+    }
+}
+
+.takepicture {
+    cursor: pointer;
+    // padding: 12px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px dashed var(--neutral-300, #9C9C9E);
+    background: var(--white, #FFF);
+}
+.takepicture-txt{
+    color: var(--black, #191919);
+    text-align: center;
+    /* Body/12-R */
+    // font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+    display: flex;
+}
+.takepictrue-wrapper{
+    max-width: 128px;
+}

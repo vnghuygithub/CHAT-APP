@@ -1,0 +1,110 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: '100%';
+    display: flex;
+    align-items: center;
+    background-color: red;
+    transition: background-color 0.3s ease;
+    max-width: 1120px;
+    margin: auto;
+}
+
+.ant-layout-header {
+    background: transparent !important;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    background: transparent !important;
+
+    .ant-typography {
+        color: #fff !important;
+        // font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        /* 24px */
+    }
+}
+
+.header-content {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bar-menu-button {
+    display: none !important;
+}
+
+.menu {
+    display: flex;
+}
+.navbar{
+    display: none;
+}
+.header.scrolled {
+    background-color: rgb(185, 136, 104); /* Màu nền khi scroll xuống */
+  }
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: block;
+        position: absolute;
+        top: 63px;
+        width: 100%;
+        left: -1500px;
+        border-top: 1px solid #aaa;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        padding: 0 15px;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        .ant-typography {
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .navbar.active {
+        left: 0;
+        animation: slideRight .2s ease-in-out;
+        .ant-divider-horizontal {
+            margin: 0;
+        }
+    }
+
+    .header {
+        background: rgb(185, 136, 104) !important;
+    }
+
+    .bar-menu-button {
+        display: block !important;
+        animation-delay: 250ms;
+        svg {
+            color: #fff !important;
+            animation-delay: 250ms;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+    @keyframes slideRight {
+        0% {
+            transform: translateX(-1500px);
+        }
+        100% {
+            transform: translateX(0px);
+            /* Khoảng cách bạn muốn phần tử di chuyển từ trái sang phải */
+        }
+    }
+    .header-content img{
+        width: 88px !important;
+    }
+}

@@ -1,0 +1,78 @@
+.banner-video {
+    width: 100%;
+    height: calc(100vh - 6px);
+    object-fit: cover;
+}
+
+.wrapper {
+    position: relative;
+
+    .banner-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 90vw;
+    }
+    .ant-space-item{
+        width: 100%;
+    }
+}
+
+.card-wrapper {
+    margin-top: 48px !important;
+    .ant-card-body {
+        padding: 5px 24px;
+    }
+
+    .ant-row.ant-form-item-row {
+        display: block !important;
+    }
+    
+}
+
+.banner-title {
+    color: var(--white, #FFF) !important;
+    text-align: center;
+    /* Heading/48-B */
+    font-family: Playfair Display;
+    font-size: 48px !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 150%;
+    /* 72px */
+}
+
+.banner-txt-note {
+    color: var(--neutral-50, #FFF) !important;
+    text-align: center;
+    // font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.banner-confirm {
+    padding: 12px 32p !important;
+    // padding: 12px 32px;
+    height: 56px !important;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-wrapper{
+        .ant-card-body {
+            padding: 24px;
+        }
+    }
+    .ant-layout-header{
+        padding:  0 16px !important;
+    }
+    .banner-confirm{
+        height: 42px !important;
+    }
+    .banner-title{
+        font-size: 24px !important;
+    }
+}

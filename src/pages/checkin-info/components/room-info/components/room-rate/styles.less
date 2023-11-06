@@ -1,0 +1,48 @@
+.text-label{
+    color: var(--neutral-400, #7A7A7B) !important;
+    // font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 18px */
+}
+.text-people{
+    color: var(--black, #191919) !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 18px */
+}
+.text-diveder{
+    background: var(--neutral-200, #CBCBCD);
+    width: 1px;
+    height: 12px !important;
+}
+.list-tags{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    li{
+        white-space: nowrap;
+        margin-right: 30px;
+        color: var(--black, #191919);
+        // font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+        list-style-type: none; /* Loại bỏ chấm mặc định */
+        position: relative; /* Đặt vị trí tương đối để có thể thêm chấm tùy chỉnh */
+        &:before {
+            content: ""; /* Tạo một phần tử trước thẻ li */
+            display: inline-block;
+            width: 4px; /* Đặt kích thước chấm tùy chỉnh */
+            height: 4px;
+            border-radius: 50%; /* Làm tròn chấm */
+            background-color: #62C476; /* Đặt màu chấm */
+            position: absolute; /* Đặt vị trí tuyệt đối để đặt chấm */
+            top: 10px; /* Điều chỉnh vị trí chấm theo yêu cầu */
+            left: -10px;
+          }
+    }
+}
